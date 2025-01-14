@@ -1,6 +1,7 @@
 import { GradiantContainer } from "@/components/containers/GradiantContainer";
 import MainContentContainer from "@/components/containers/MainContentContainer";
 import { TimelineView } from "@/components/misc/TimelineView";
+import AnimatedGradientText from "@/components/typography/AnimatedGradientText";
 import { GradiantAppearText } from "@/components/typography/GradiantAppearText";
 import { Card } from "@/components/ui/card";
 
@@ -90,6 +91,7 @@ const data: Array<{ title: string; content: React.ReactNode }> = [
 const AboutScreen = () => {
   return (
     <MainContentContainer>
+      <AnimatedGradientText text="About Us and the Company" />
       <GradiantAppearText
         words="Building the future of technology, one line of code at a time. From a small garage startup to an industry leader, our journey has been driven by innovation, passion, and the relentless pursuit of excellence. Together with our amazing team and community, we're reshaping what's possible in the digital landscape."
         className="text-2xl"

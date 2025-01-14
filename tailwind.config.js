@@ -53,8 +53,14 @@ module.exports = {
       },
       animation: {
         shimmer: "shimmer 2s linear infinite",
+        "text-gradient": "text-gradient 1.3s linear infinite",
       },
       keyframes: {
+        "text-gradient": {
+          to: {
+            backgroundPosition: "200% center",
+          },
+        },
         shimmer: {
           from: {
             backgroundPosition: "0 0",
