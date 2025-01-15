@@ -1,23 +1,12 @@
-import { useEffect } from "react";
 import { useNavigate } from "react-router";
-import { Outlet } from "react-router";
-import { observer } from "@legendapp/state/react";
-
 import { Avatar } from "@/components/avatars/Avatar";
 import {
   Dropdown,
   DropdownButton,
-  DropdownDivider,
   DropdownItem,
   DropdownLabel,
   DropdownMenu,
 } from "@/components/misc/Dropdown";
-import {
-  Navbar,
-  NavbarItem,
-  NavbarSection,
-  NavbarSpacer,
-} from "@/components/navigation/navbars/TailwindNavbar";
 import {
   Sidebar,
   SidebarBody,

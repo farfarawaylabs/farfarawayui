@@ -74,6 +74,7 @@ const SidebarAuthenticatedLayout = observer(function AuthenticatedLayout() {
     const checkSession = async () => {
       // Do some check to check the session with your auth provider or backend
 
+      // eslint-disable-next-line no-constant-condition
       if (false) {
         await signOut();
         navigate("/");
