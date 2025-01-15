@@ -1,7 +1,6 @@
-import { SimpleNavbar } from "@/navigation/navbars/SimpleNavbar";
+import { SimpleNavbar } from "@/components/navigation/navbars/SimpleNavbar";
 import { useOutlet } from "react-router";
-import SimpleFooter from "@/navigation/footers/SimpleFooter";
-
+import SimpleFooter from "@/components/navigation/footers/SimpleFooter";
 import { Logo } from "@/demo/Logo";
 import ScreenContainer from "@/components/containers/ScreenContainer";
 import YouTubeIcon from "@/components/icons/YouTubeIcon";

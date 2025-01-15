@@ -7,6 +7,7 @@ import AboutScreen from "./screens/AboutScreen";
 import SignupScreen from "./screens/SignupScreen";
 import AuthenticatedLayout from "@/layouts/AuthenticatedLayout";
 import AppHomeScreen from "./screens/AppHomeScreen";
+import SidebarAuthenticatedLayout from "@/layouts/SidebarAuthenticatedLayout";
 
 const SiteRoutes = () => {
   return (
@@ -18,7 +19,7 @@ const SiteRoutes = () => {
         <Route path="/about" element={<AboutScreen />} />
         <Route path="/signup" element={<SignupScreen />} />
       </Route>
-      <Route element={<AuthenticatedLayout />}>
+      <Route element={<SidebarAuthenticatedLayout />}>
         <Route path="/app/home" element={<AppHomeScreen />} />
       </Route>
     </Routes>

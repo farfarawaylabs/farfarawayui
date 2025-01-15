@@ -5,8 +5,9 @@ import { useEffect } from "react";
 import { Outlet, useNavigate } from "react-router";
 import { useUser } from "@/demo/state/authState";
 import ScreenContainer from "@/components/containers/ScreenContainer";
-import LoggedInSimpleNavbar from "@/navigation/navbars/LoggedInSimpleNavbar";
 import { Logo } from "@/demo/Logo";
+import LoggedInSimpleNavbar from "@/components/navigation/navbars/LoggedInSimpleNavbar";
+import AuthenticatedUserSidebar from "@/components/sidebars/AuthenticatedUserSidebar/AuthenticatedUserSidebar";
 
 const AuthenticatedLayout = observer(function AuthenticatedLayout() {
   const user = useUser();
@@ -29,6 +30,7 @@ const AuthenticatedLayout = observer(function AuthenticatedLayout() {
 
   return (
     <ScreenContainer>
+      <AuthenticatedUserSidebar />
       <LoggedInSimpleNavbar
         logo={<Logo className="h-8 w-auto" />}
         links={[

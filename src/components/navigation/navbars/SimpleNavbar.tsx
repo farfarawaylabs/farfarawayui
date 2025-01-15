@@ -2,11 +2,9 @@
 
 import { Popover, PopoverButton, PopoverBackdrop, PopoverPanel } from "@headlessui/react";
 import clsx from "clsx";
-
 import { Button } from "@/components/ui/button";
 import { Container } from "@/components/containers/Container";
-import { Logo } from "@/demo/Logo";
-import { NavLink } from "@/navigation/NavLink";
+import { NavLink } from "@/components/navigation/NavLink";
 import { MobileNavbarProps, NavbarProps } from "./interfaces";
 
 function MobileNavLink({ href, children }: { href: string; children: React.ReactNode }) {
